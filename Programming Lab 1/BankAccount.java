@@ -6,6 +6,15 @@ public class BankAccount {
         public double annualIR;
         public double monthlyServiceC;
 
+      //The No-Arg Constructor
+   
+      public BankAccount()
+
+        {
+
+
+        }   
+       
         //constructor
         public BankAccount(double balance, double annualIR){
 
@@ -13,21 +22,37 @@ public class BankAccount {
         this.annualIR = annualIR;
 
         }
-        
+        //number of deposites
            public void deposit(double total)
             {
                 balance += total;
                 depositsAMonth += total;
             }
-            
+            //number of withdrawls
               public void withdraw(double total)
             {
                 balance -= total;
                 withdrawsAMonth += total;
             }
             
-            public calcInterest()
+            public double calcInterest(double balance, double annualIR)
             {
+            double monthlyIR = annualIR / 12;
+
+            monthlyIR = balance * monthlyIR;
+
+            balance = balance + monthlyIR;
             
+            return balance;
+            }
+            
+            public double monthlyProcess(double balance, double depositsAMonth, double withdrawsAMonth)
+            {
+            balance = balance - monthlyServiceC;
+            withdrawsAMonth = 0;
+            depositsAMonth = 0;
+            monthlyServiceC = 0;
+            
+            return balance;
             }
 }
