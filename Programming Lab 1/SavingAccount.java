@@ -1,62 +1,26 @@
-public class SavingAccount extends BankAccount  {
+public class SavingsAccount extends BankAccount
+{
 
-  private int deposite;
-  private int withdrawls;
-  private int minAmount = 25;
-   
-   
-   public SavingAccount(){
-		deposite=0;
-		withdrawls=0;
-	}
-  
-  
 
-  public boolean desposit (double total)
+   public void withdraw(double total) 
    {
-       if (minAmount > total) 
-       {
-           return true;
-        }
-        else 
-        
-        return false;
-    }
+      if(balance >= 25)
+      super.withdraw(total);
+   }
 
-    public  double withdrawA (double total)
+   public void deposit(double total) 
    {
-       if (true) 
-       {
-          super.withdraw(total);
-          
-          return total;
-       
-       
-        } 
-       else
-       
-      return total;
-    }
+      if(balance >= 25)
+      super.deposit(total);
+   }
 
+   //protect?
+   public void monthlyProcess()
+   {
+    if(withdraws > 4)
+	    monthlySC++;
+    else
+	   System.out.println("You did not go over 4 withdrawls this month." );
 
-    public void monthlyProcess()
-
-    {
-
-      if(withdrawsAMonth > 4)
-
-        {
-
-            monthlyServiceC = monthlyServiceC + withdrawsAMonth - 4;
-
-        }
-
-        super.monthlyProcess();
-
-        if(balance < 25)
-
-            return;
-      }
-
-
+   }
 }
