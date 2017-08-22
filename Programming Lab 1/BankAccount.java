@@ -6,12 +6,11 @@ public class BankAccount {
         public double annualIR;
         public double monthlyServiceC;
 
-      //The No-Arg Constructor
+      //A no arguemtn constructor
    
       public BankAccount()
 
         {
-
 
         }   
        
@@ -56,3 +55,4 @@ public class BankAccount {
             return balance;
             }
 }
+
