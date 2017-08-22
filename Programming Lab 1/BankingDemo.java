@@ -1,20 +1,32 @@
 import java.util.Scanner;
 
-public class BankingDemo {
+public class BankDemo {
 
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
 
+		System.out.println("Press D to deposite or w to withdraw.");
+		char choice = scanner.nextLine().charAt(0);
+		
+		 if (choice == 'd' || choice == 'D')
+         {
+         
+         }
+		 else if (choice == 'w' || choice == 'W')
+		 {
+			 System.out.println("What is your balance");
+			 double balance = scanner.nextDouble();
+			 SavingsAccount saveA = new SavingsAccount(balance); 
+			 
+			 System.out.println(saveA);
+			 
+		 }
+		 else
+		 {
+			 System.out.println("Incorrect choice");
+		 }
+		 
+	}
 
-	public static void main(String[] args) 
-	{
-   
-   Scanner scanner = new Scanner(System.in);
-   
-   	  System.out.println("What is the current balance?");
-	     double balance = scanner.nextDouble();
-	     
-	     System.out.println("How many withdrawls a month?");
-	     double withdrawsAMonth = scanner.nextDouble();
-   
-   SavingAccount saveA = new SavingAccount(balance, withdrawsAMonth);
-   }
 }
