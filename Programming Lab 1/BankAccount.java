@@ -33,7 +33,7 @@ public abstract class BankAccount
      double monthlyIR;
      double monthlyI;
      
-     monthlyIR = (annualIR / 12);
+     monthlyIR = annualIR / 12;
      monthlyI = balance * monthlyIR;
      balance = balance + monthlyI;
    }
