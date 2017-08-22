@@ -39,6 +39,24 @@ public class SavingAccount extends BankAccount  {
     }
 
 
+    public void monthlyProcess()
+
+    {
+
+      if(withdrawsAMonth > 4)
+
+        {
+
+            monthlyServiceC = monthlyServiceC + withdrawsAMonth - 4;
+
+        }
+
+        super.monthlyProcess();
+
+        if(balance < 25)
+
+            return;
+      }
 
 
 }
