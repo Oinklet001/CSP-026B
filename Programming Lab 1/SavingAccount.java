@@ -1,16 +1,26 @@
 public class SavingsAccount extends BankAccount
 {
 
+	//no argument constructor
 	public SavingsAccount(double balance)
 	{
-	super();
+
 
 	}
 	
 public void withdraw(double total) 
 {
   if(balance >= 25)
+  {
     super.withdraw(total);
+  
+  System.out.println("You withdrew money." + balance );
+  }
+  else
+  {
+	  System.out.println("You are to low.");
+  }
+  
 }
 
 public void deposit(double total) 
