@@ -7,7 +7,7 @@ public class BankDemo {
 	public static void main(String[] args) {
 		
 		//Saving account object
-		SavingAccount saveA = new SavingAccount();
+		SavingsAccount saveA = new SavingsAccount();
 
 		//Scanner class
 		scanner = new Scanner(System.in);
