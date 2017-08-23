@@ -19,13 +19,13 @@ public abstract class BankAccount
    public void deposit(double total)
    {
      balance = balance + total;
-     deposits++;
+     deposits = deposits + deposits;
     
    }
    public void withdraw (double total)
    {
      balance = balance - total;
-     withdraws++;
+     withdraws = withdraws + withdraws;
    }
 
    private void calcInterest() 
@@ -51,4 +51,9 @@ public abstract class BankAccount
    {
      return balance;
    }
+   
+	//public double getMoney()
+	//{
+	//	return withdraws;
+	//}
 }
