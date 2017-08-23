@@ -1,4 +1,4 @@
-public class SavingAccount extends BankAccount
+public class SavingsAccount extends BankAccount
 {
 	private double total;
 	private double money;
