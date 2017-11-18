@@ -28,7 +28,7 @@ class Node{
 
 
 
-public class BinarySearchTreeDemoTurnIn {
+public class BinarySearchTreeDemo {
 
 	static Node root;
 	
@@ -161,7 +161,7 @@ public Node delete(int disap){
 	
 	public static void main(String[] args) {
 		
-		BinarySearchTreeDemoTurnIn base = new BinarySearchTreeDemoTurnIn();
+		BinarySearchTreeDemo base = new BinarySearchTreeDemo();
 		
 		
 		int[] array = new int[5];
